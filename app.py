@@ -93,10 +93,10 @@ def ChangeUserStatus(conn, uid, thing):
 def handle_message(event):
     etext = event.message.text
     connection = pymysql.connect(
-        host="us-cdbr-east-05.cleardb.net",
-        user="b8854a04772e3b",
-        password="0891a25d",
-        db="heroku_02e5c32fa545b1e",
+        host="us-cluster-east-01.k8s.cleardb.net",
+        user="b5971753459865",
+        password="3bd1596c",
+        db="heroku_5326dabad7376d9",
         charset='utf8mb4',
         cursorclass=pymysql.cursors.DictCursor
     )
